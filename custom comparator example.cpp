@@ -8,4 +8,9 @@ auto cmp = [](array<int, 3> a1, array<int, 3> a2) {
     }
 };
 
-set<array<int, 3>, decltype(cmp)> s(cmp)
+// Set
+set<array<int, 3>, decltype(cmp)> s(cmp);
+
+// Vector
+vector<array<int, 3> > v;
+sort(all(v), cmp);

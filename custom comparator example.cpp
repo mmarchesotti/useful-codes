@@ -14,3 +14,6 @@ set<array<int, 3>, decltype(cmp)> s(cmp);
 // Vector
 vector<array<int, 3> > v;
 sort(all(v), cmp);
+
+// Vector with n custom ordered sets of pairs
+vector<set<pair<char, int>, decltype(&cmp)>> v(n, set<pair<char, int>, decltype(&cmp)>(cmp));
